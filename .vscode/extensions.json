@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "coenraads.bracket-pair-colorizer",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "jpoissonnier.vscode-styled-components",
+    "msjsdiag.debugger-for-chrome",
+    "naumovs.color-highlight",
+    "nhoizey.gremlins",
+    "orta.vscode-jest",
+    "qezhu.gitlink",
+    "pmneo.tsimporter",
+    "stpn.vscode-graphql",
+    "streetsidesoftware.code-spell-checker",
+    "visualstudioexptteam.vscodeintellicode",
+    "wix.vscode-import-cost"
+  ]
+}
