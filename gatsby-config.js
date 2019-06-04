@@ -5,11 +5,11 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     author: '@abumalick',
-    canonicalUrl: 'https://www.production.url',
-    companyName: 'My company name',
-    siteTitle: 'Gatsby Typescript Material Rebass Starter',
+    canonicalUrl: 'https://radio.ahlsunnah.com',
+    companyName: 'Ahlsunnah',
+    siteTitle: 'Ahlsunnah Radio',
     siteDescription:
-      'Kick off your next project with this starter that help you get started with some of the best tools used in frontend development',
+      'Ahlsunnah Radio is an app for listening to islamic stations. It contains a few stations in Arabic, English, French and Turkish languages.',
   },
   plugins: [
     'gatsby-plugin-typescript',
@@ -40,13 +40,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Gatsby typescript starter',
-        short_name: 'Gatsby typescript starter',
+        name: 'Ahlsunnah Radio',
+        short_name: 'Ahlsunnah Radio',
         start_url: '/',
         background_color: '#6200ee',
         theme_color: '#6200ee',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png',
+        icon: 'src/images/ahlsunnah-radio.png',
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
