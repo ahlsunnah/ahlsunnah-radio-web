@@ -6,15 +6,21 @@ import List, {
 } from '@material/react-list'
 import {TStations, IStation} from 'types/station'
 import {Box} from '@rebass/emotion'
+import {TCurrentlyPlayingData} from '../hooks/useCurrentlyPlayingData'
 
 const API = process.env.GATSBY_API
 
 interface IProps {
+  currentlyPlayingData: TCurrentlyPlayingData
   stations: TStations
   handleSelectStation: (station: IStation) => void
 }
 
-const StationList = ({handleSelectStation, stations}: IProps): JSX.Element => {
+const StationList = ({
+  currentlyPlayingData,
+  handleSelectStation,
+  stations,
+}: IProps): JSX.Element => {
   return (
     <Box
       as={List}
@@ -29,11 +35,17 @@ const StationList = ({handleSelectStation, stations}: IProps): JSX.Element => {
       }}
     >
       {stations.edges.map(
-        ({node: {id, img, name}}): JSX.Element => {
+        ({node: {id, apiId, img, name}}): JSX.Element => {
+          const currentlyPlayingItem =
+            currentlyPlayingData &&
+            currentlyPlayingData.find(({id}): boolean => id === apiId)
+          const title =
+            currentlyPlayingItem &&
+            currentlyPlayingItem.title.replace('Unknown -', '')
           return (
             <ListItem key={id}>
               <ListItemGraphic graphic={<img alt="" src={API + img} />} />
-              <ListItemText primaryText={name} secondaryText={undefined} />
+              <ListItemText primaryText={name} secondaryText={title} />
             </ListItem>
           )
         },

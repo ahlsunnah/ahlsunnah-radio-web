@@ -1,11 +1,13 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Layout from 'components/Layout'
 import SEO from 'components/SEO'
 import {graphql} from 'gatsby'
 import StationList from 'components/StationList'
+import {Text} from '@rebass/emotion'
 import {TStations, IStation} from '../types/station'
 import ActionButton from 'components/ActionButton'
 import useAudio from '../hooks/useAudio'
+import useCurrentPlayingData from '../hooks/useCurrentlyPlayingData'
 
 interface IProps {
   data: {
@@ -20,11 +22,15 @@ const IndexPage = ({data}: IProps): JSX.Element => {
     // setStation(station)
     play(station.url)
   }
+  const currentlyPlayingData = useCurrentPlayingData()
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `typescript`, `react`]} />
-      <h1>بسم الله الرحمن الرحيم</h1>
+      <Text as="h1" textAlign="center">
+        بسم الله الرحمن الرحيم
+      </Text>
       <StationList
+        currentlyPlayingData={currentlyPlayingData}
         stations={data.stations}
         handleSelectStation={handleSelectStation}
       />

@@ -3,6 +3,7 @@ import loadingSvg from 'images/loading.svg'
 import playSvg from 'images/play.svg'
 import stopSvg from 'images/stop.svg'
 import Fab from '@material/react-fab'
+import {css} from '@emotion/core'
 import {TAudioStatus, TPlay} from '../hooks/useAudio'
 
 interface IProps {
@@ -30,6 +31,15 @@ const ActionButton = ({play, status, stop}: IProps): JSX.Element => {
   }
   return (
     <Fab
+      css={css`
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        @media (min-width: 60em) {
+          bottom: 1.5rem;
+          right: 1.5rem;
+        }
+      `}
       exited={!status}
       onClick={handleClick}
       icon={<img className="material-icons" src={iconImg} />}
