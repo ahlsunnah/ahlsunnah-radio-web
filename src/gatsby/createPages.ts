@@ -1,4 +1,4 @@
-import {GatsbyCreatePages} from '../types/gatsby'
+import {GatsbyCreatePages} from '../types/gatsby-node'
 
 const createDawaPages: GatsbyCreatePages = async ({
   graphql,

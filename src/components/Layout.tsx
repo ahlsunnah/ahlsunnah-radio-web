@@ -1,6 +1,9 @@
 import 'normalize.css'
+import 'styles/global.scss'
 import React from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
+import theme from 'styles/theme'
+import {ThemeProvider} from 'emotion-theming'
 import Header from './header'
 
 interface IProps {
@@ -31,14 +34,16 @@ const Layout = ({children}: IProps): JSX.Element => {
   `)
   const {canonicalUrl, companyName, siteTitle} = site.siteMetadata
   return (
-    <>
-      <Header siteTitle={siteTitle} />
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()} Copyright{' '}
-        <a href={canonicalUrl}>{companyName}</a> - All rights reserved
-      </footer>
-    </>
+    <ThemeProvider theme={theme}>
+      <>
+        <Header siteTitle={siteTitle} />
+        <main>{children}</main>
+        <footer>
+          © {new Date().getFullYear()} Copyright{' '}
+          <a href={canonicalUrl}>{companyName}</a> - All rights reserved
+        </footer>
+      </>
+    </ThemeProvider>
   )
 }
 
