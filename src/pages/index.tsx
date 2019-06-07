@@ -25,7 +25,7 @@ const IndexPage = ({data}: IProps): JSX.Element => {
   const currentlyPlayingData = useCurrentPlayingData()
   return (
     <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `typescript`, `react`]} />
+      <SEO keywords={[`ahlsunnah`, `sunnah`, `quran`, 'radio']} />
       <Text as="h1" textAlign="center">
         بسم الله الرحمن الرحيم
       </Text>
