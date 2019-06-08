@@ -7,6 +7,9 @@ import List, {
 import {TStations, IStation} from 'types/station'
 import {Box} from '@rebass/emotion'
 import {TCurrentlyPlayingData} from '../hooks/useCurrentlyPlayingData'
+import ScrollingText from './ScrollingText'
+
+const WIDTH = '26rem'
 
 const API = process.env.GATSBY_API
 
@@ -26,7 +29,9 @@ const StationList = ({
       as={List}
       radioList
       avatarList
-      width="20rem"
+      twoLine
+      wrapFocus
+      width={WIDTH}
       mx="auto"
       singleSelection
       handleSelect={(itemIndex: number): void => {
@@ -45,7 +50,16 @@ const StationList = ({
           return (
             <ListItem key={id}>
               <ListItemGraphic graphic={<img alt="" src={API + img} />} />
-              <ListItemText primaryText={name} secondaryText={title} />
+              <ListItemText
+                primaryText={name}
+                secondaryText={
+                  title && (
+                    <ScrollingText width={`calc(${WIDTH} - 88px)`}>
+                      {title}
+                    </ScrollingText>
+                  )
+                }
+              />
             </ListItem>
           )
         },
