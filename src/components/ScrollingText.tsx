@@ -14,6 +14,8 @@ const rtlScrollingCss = css`
   ${commonCss}
   animation: scroll-right 15s linear infinite;
   transform: translateX(-100%);
+  text-align: right;
+  direction: rtl;
   @keyframes scroll-right {
     0% {
       transform: translateX(-100%);
@@ -28,6 +30,8 @@ const ltrScrollingCss = css`
   ${commonCss}
   animation: scroll-left 15s linear infinite;
   transform: translateX(100%);
+  text-align: left;
+  direction: ltr;
   @keyframes scroll-left {
     0% {
       transform: translateX(100%);
@@ -52,7 +56,6 @@ export const ScrollingText: React.FC<IScrollingTextProps> = ({
     <div
       css={css`
         position: relative;
-        background-color: lightblue;
         height: 2em;
         top: 0.5em;
         width: ${width};

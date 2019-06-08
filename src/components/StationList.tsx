@@ -5,9 +5,11 @@ import List, {
   ListItemText,
 } from '@material/react-list'
 import {TStations, IStation} from 'types/station'
+import {css} from '@emotion/core'
 import {Box} from '@rebass/emotion'
 import {TCurrentlyPlayingData} from '../hooks/useCurrentlyPlayingData'
 import ScrollingText from './ScrollingText'
+import direction from 'direction'
 
 const WIDTH = '26rem'
 
@@ -51,6 +53,15 @@ const StationList = ({
             <ListItem key={id}>
               <ListItemGraphic graphic={<img alt="" src={API + img} />} />
               <ListItemText
+                css={
+                  direction(name) === 'rtl'
+                    ? css`
+                        direction: rtl;
+                      `
+                    : css`
+                        direction: ltr;
+                      `
+                }
                 primaryText={name}
                 secondaryText={
                   title && (
