@@ -35,9 +35,10 @@ const ActionButton = ({play, status, stop}: IProps): JSX.Element => {
         position: fixed;
         bottom: 1rem;
         right: 1rem;
-        @media (min-width: 60em) {
-          bottom: 1.5rem;
-          right: 1.5rem;
+        @media only screen and (min-width: 768px) {
+          position: absolute;
+          bottom: 5rem;
+          right: 3.2rem;
         }
       `}
       exited={!status}

@@ -11,30 +11,31 @@ import {TCurrentlyPlayingData} from '../hooks/useCurrentlyPlayingData'
 import ScrollingText from './ScrollingText'
 import direction from 'direction'
 
-const WIDTH = '26rem'
-
 const API = process.env.GATSBY_API
 
 interface IProps {
   currentlyPlayingData: TCurrentlyPlayingData
-  stations: TStations
   handleSelectStation: (station: IStation) => void
+  stations: TStations
+  widthBase: number
 }
 
 const StationList = ({
   currentlyPlayingData,
   handleSelectStation,
   stations,
+  widthBase,
 }: IProps): JSX.Element => {
   return (
     <Box
       as={List}
+      bg="white"
+      width={1}
+      py={0}
       radioList
       avatarList
       twoLine
       wrapFocus
-      width={WIDTH}
-      mx="auto"
       singleSelection
       handleSelect={(itemIndex: number): void => {
         const selectedStation = stations.edges[itemIndex].node
@@ -57,15 +58,17 @@ const StationList = ({
                   direction(name) === 'rtl'
                     ? css`
                         direction: rtl;
+                        outline: 0;
                       `
                     : css`
                         direction: ltr;
+                        outline: 0;
                       `
                 }
                 primaryText={name}
                 secondaryText={
                   title && (
-                    <ScrollingText width={`calc(${WIDTH} - 88px)`}>
+                    <ScrollingText width={`${widthBase - 88}px`}>
                       {title}
                     </ScrollingText>
                   )
