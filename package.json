@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "author": "Abdullah Hilson <abdullah.hilson@gmail.com>",
   "dependencies": {
-    "@babel/core": "^7.4.4",
+    "@babel/core": "^7.5.5",
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.11",
     "@material/react-button": "^0.12.1",
