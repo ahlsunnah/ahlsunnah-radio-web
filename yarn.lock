@@ -1144,19 +1144,19 @@
     "@material/feature-targeting" "^0.44.1"
     "@material/theme" "^1.1.0"
 
-"@material/fab@^1.1.0":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@material/fab/-/fab-1.1.1.tgz#1c8cb818b76ed30d6abb2f667c7df359300fec0d"
-  integrity sha512-6q9F61LIpakeHDninWI4VNLBQhvcyVcS5p1nrPdPDT60IW/lE5iQy7RKivaiMINVaQ0NZDzW1LjCgI5v063cLQ==
+"@material/fab@^2.1.1":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@material/fab/-/fab-2.3.0.tgz#d2302b6f21bd84c7fa6d4196079d39bf7abd3cc2"
+  integrity sha512-XsRTbUMsH4pE/E8CkpAahwNywzwiz73nyBC0YxhzAxfHVO4oGwjcUsVlnFMSITj7K8aEyD/uMyAYwgISuAH83g==
   dependencies:
     "@material/animation" "^1.0.0"
     "@material/elevation" "^1.1.0"
     "@material/feature-targeting" "^0.44.1"
-    "@material/ripple" "^1.1.0"
+    "@material/ripple" "^2.3.0"
     "@material/rtl" "^0.42.0"
     "@material/shape" "^1.1.1"
     "@material/theme" "^1.1.0"
-    "@material/typography" "^1.0.0"
+    "@material/typography" "^2.3.0"
 
 "@material/feature-targeting@^0.44.1":
   version "0.44.1"
@@ -1229,15 +1229,14 @@
     classnames "^2.2.5"
     react "^16.3.2"
 
-"@material/react-fab@^0.13.0":
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/@material/react-fab/-/react-fab-0.13.0.tgz#44c052f5e0261bcb31582a852d56420b3c34874e"
-  integrity sha512-TF9B6sesbejE8gLvZXkja4ABF9CHM+lDrsPU/am6ufGNtWyh52SAxiIWPoxs23SFAFUqLKYnXsZ7XpUMJR2ZlQ==
+"@material/react-fab@^0.15.0":
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/@material/react-fab/-/react-fab-0.15.0.tgz#e11ba78cd9ab621bee0fb58b0c213754736bb7fc"
+  integrity sha512-eodPQ3h/P42Vzo0K3WHJvOCqmW+63SRTxPywGMWyreYah5ImfQYGo/P4vDERx1xowqWG9lbvM+laHs4OMRVXUQ==
   dependencies:
-    "@material/fab" "^1.1.0"
-    "@material/react-ripple" "^0.13.0"
+    "@material/fab" "^2.1.1"
+    "@material/react-ripple" "^0.15.0"
     classnames "^2.2.6"
-    react "^16.4.2"
 
 "@material/react-list@^0.13.0":
   version "0.13.0"
@@ -1384,6 +1383,13 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@material/typography/-/typography-1.0.0.tgz#327ecfcac5ee3af8a3a102f3f125a761202f4189"
   integrity sha512-Oeqbjci1cC7jTE8/n3dwnkqKe9ZeWiaE+rgMtRYtRFw1HvAw14SpGA5EEAS/Li2Hu2KZ50FYCe3HYqShfxtChA==
+  dependencies:
+    "@material/feature-targeting" "^0.44.1"
+
+"@material/typography@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@material/typography/-/typography-2.3.0.tgz#fe2180c697172227f0745cda684ecafdaba3f8dd"
+  integrity sha512-NtWVVvwG9Te6/kuIl4fEwDcXGCS7mfPgo5CKPyxcK6y0hJHv6yRHpipJT9D4ZlXw0sQx9B33doOK7iYJtwBBZw==
   dependencies:
     "@material/feature-targeting" "^0.44.1"
 
