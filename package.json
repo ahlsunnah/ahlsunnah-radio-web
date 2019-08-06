@@ -28,7 +28,7 @@
     "gatsby-plugin-typescript": "^2.0.14",
     "gatsby-source-filesystem": "^2.0.36",
     "gatsby-transformer-sharp": "^2.1.19",
-    "gatsby-transformer-yaml": "^2.1.12",
+    "gatsby-transformer-yaml": "^2.2.4",
     "howler": "^2.1.2",
     "node-fetch": "^2.6.0",
     "node-sass": "^4.12.0",
