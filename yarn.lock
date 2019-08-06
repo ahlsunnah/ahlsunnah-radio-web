@@ -1200,15 +1200,14 @@
     "@material/selection-control" "^0.41.0"
     "@material/theme" "^0.41.0"
 
-"@material/react-button@^0.12.1":
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/@material/react-button/-/react-button-0.12.1.tgz#8db40f4a634c56599e89f0e2db21e302c76861c7"
-  integrity sha512-T5EorlTayH5+04Cib0ltZQlz9P7QdAalVMYNmXFbjSCeMZj/5yhV1cBzhZ5uZ+XjtGcEZrE839d+t+/GiXyBeg==
+"@material/react-button@^0.15.0":
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/@material/react-button/-/react-button-0.15.0.tgz#1585c86547cd83ebe0642fa8f45b83da3075d259"
+  integrity sha512-OnnQx1XEomYlmp9TQIRYy+UAzJG1NPlmBfX/oP6hkxB4bWcrR2MLbqR4J1RMLDjl7a6qfdU2HskWPYp0wS+4Pw==
   dependencies:
     "@material/button" "^1.1.0"
-    "@material/react-ripple" "^0.12.0"
+    "@material/react-ripple" "^0.15.0"
     classnames "^2.2.6"
-    react "^16.4.2"
 
 "@material/react-card@^0.15.0":
   version "0.15.0"
@@ -1271,17 +1270,6 @@
   dependencies:
     "@material/ripple" "^0.41.0"
     classnames "^2.2.5"
-    react "^16.4.2"
-    utility-types "^3.2.1"
-
-"@material/react-ripple@^0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@material/react-ripple/-/react-ripple-0.12.0.tgz#091df52541692234c8d54e7a3b77ad635362a25e"
-  integrity sha512-/Xwhf3T+4D6XP/H2kIsRIfV0MqSlaOdteqEIj0ItqmCj+40aNpQ1G1q8kQoakC8LW7iZuUcjiD7kCfXqGTyDlw==
-  dependencies:
-    "@material/dom" "^1.0.0"
-    "@material/ripple" "^1.0.0"
-    classnames "^2.2.6"
     react "^16.4.2"
     utility-types "^3.2.1"
 
