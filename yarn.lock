@@ -1575,10 +1575,10 @@
   resolved "https://registry.yarnpkg.com/@types/mkdirp/-/mkdirp-0.3.29.tgz#7f2ad7ec55f914482fc9b1ec4bb1ae6028d46066"
   integrity sha1-fyrX7FX5FEgvybHsS7GuYCjUYGY=
 
-"@types/node-fetch@^2.3.4":
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/@types/node-fetch/-/node-fetch-2.3.4.tgz#a46fc4fe9f94b491bf551b6bb7f0f493b9bacd1a"
-  integrity sha512-ZwGXz5osL88SF+jlbbz0WJlINlOZHoSWPrLytQRWRdB6j/KVLup1OoqIxnjO6q9ToqEEP3MZFzJCotgge+IiRw==
+"@types/node-fetch@^2.5.1":
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/@types/node-fetch/-/node-fetch-2.5.1.tgz#9e4daffa983eb098d25c2cb410c949678f3aee78"
+  integrity sha512-nYsC20tHanaNa4coFvCDcuIvtdvu8YkQz0XQOoBHL1X1y1QxeNe73dg1PaLGqsJNWiVwK0bjn5Jf+ZQpE6acJg==
   dependencies:
     "@types/node" "*"
 
