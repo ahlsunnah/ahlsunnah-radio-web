@@ -36,7 +36,7 @@
     "prop-types": "^15.7.2",
     "raf": "^3.4.1",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react-dom": "^16.10.1",
     "react-helmet": "^5.2.1",
     "source-map-support": "^0.5.12",
     "ts-node": "^8.3.0",
