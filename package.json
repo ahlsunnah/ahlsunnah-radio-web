@@ -65,7 +65,7 @@
     "prettier": "^1.17.1",
     "react-testing-library": "^8.0.1",
     "ts-jest": "^24.0.2",
-    "typescript": "^3.4.5"
+    "typescript": "^3.7.3"
   },
   "keywords": [
     "gatsby",
